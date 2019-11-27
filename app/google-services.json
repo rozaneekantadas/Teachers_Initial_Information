@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1763501807",
+    "firebase_url": "https://teachersinformations.firebaseio.com",
+    "project_id": "teachersinformations",
+    "storage_bucket": "teachersinformations.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1763501807:android:181c544da8320f13399d1a",
+        "android_client_info": {
+          "package_name": "com.example.teachersinformations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1763501807-787ulcqec74hsu5sqespdu4t3gneb44s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teachersinformations",
+            "certificate_hash": "1d085b0bdc711d0a38a70b119448ec7decd53dfb"
+          }
+        },
+        {
+          "client_id": "1763501807-kpvmi8dg3htpgrlusgho7osnci6kona5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmwRpBmGTjSzSbY1yhhMKfatjzmFi9yFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1763501807-kpvmi8dg3htpgrlusgho7osnci6kona5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

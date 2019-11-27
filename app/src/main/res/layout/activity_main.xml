@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/initialEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Initial"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textCapCharacters"
+        />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Teacher Name"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"
+        />
+
+    <EditText
+        android:id="@+id/departmentEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Department"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textCapCharacters"
+        />
+
+    <EditText
+        android:id="@+id/contactEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="textWebEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Save"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        />
+
+</LinearLayout>

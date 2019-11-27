@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    
+    <TextView
+        android:id="@+id/initial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAH"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="28dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dr. Syed Akhter Hossain"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/icon_person"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CSE"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/icon_departmnet"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01817382645"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:drawableLeft="@drawable/icon_phone"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aktarhossain@daffodilvarsity.edu.bd"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="5dp"
+        />
+
+</LinearLayout>
