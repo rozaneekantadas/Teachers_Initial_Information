@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/greylight"
+    tools:context=".PopInfo">
+
+    <TextView
+        android:id="@+id/closebtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:text="X"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/pop_up_info_bg"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="64dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/popimgView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/img_sah"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/popupinitial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAH"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingLeft="28dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/popupname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Syed Akhter Hossain"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/icon_name"
+            android:drawablePadding="5dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/popupdesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Head"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/icon_designation_white"
+            android:drawablePadding="5dp"
+            android:textColor="@color/whitelight"
+            />
+
+        <TextView
+            android:id="@+id/popupdepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="CSE"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/icon_department"
+            android:drawablePadding="5dp"
+            android:textColor="@color/whitelight"
+            />
+
+        <TextView
+            android:id="@+id/popupcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01817382645"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/icon_phone_white"
+            android:drawablePadding="5dp"
+            android:textColor="@color/whitelight"
+            android:textIsSelectable="true"
+            />
+
+        <TextView
+            android:id="@+id/popupemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aktarhossain@daffodilvarsity.edu.bd"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textIsSelectable="true"
+            android:drawableLeft="@drawable/icon_email_white"
+            android:drawablePadding="5dp"
+            android:textColor="@color/whitelight"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
