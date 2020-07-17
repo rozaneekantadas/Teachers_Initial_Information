@@ -1,75 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    android:scrollbars="none"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        >
 
-    <EditText
-        android:id="@+id/initialEditText"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Initial"
-        android:padding="10dp"
-        android:background="@drawable/edit_text_bg"
-        android:inputType="textCapCharacters"
-        />
+        <ImageView
+            android:id="@+id/showImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/icon_photo"
+            android:background="@drawable/img_border"
+            android:layout_marginBottom="5dp"
+            />
 
-    <EditText
-        android:id="@+id/nameEditText"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Teacher Name"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"
-        />
+        <Button
+            android:id="@+id/chooseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            />
 
-    <EditText
-        android:id="@+id/departmentEditText"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Department"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"
-        android:inputType="textCapCharacters"
-        />
 
-    <EditText
-        android:id="@+id/contactEditText"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Contact"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"
-        android:inputType="number"
-        />
+        <EditText
+            android:id="@+id/initialEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Initial"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textCapCharacters"
+            />
 
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"
-        android:inputType="textWebEmailAddress"
-        />
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Name"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            />
 
-    <Button
-        android:id="@+id/submitBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Save"
-        android:textColor="#fff"
-        android:background="@drawable/button_bg"
-        />
+        <EditText
+            android:id="@+id/designationEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Designation"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/departmentEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textCapCharacters"
+            />
+
+        <EditText
+            android:id="@+id/contactEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textWebEmailAddress"
+            />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Save"
+            android:textColor="#fff"
+            android:background="@drawable/button_bg"
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

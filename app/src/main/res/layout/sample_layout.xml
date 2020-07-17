@@ -6,7 +6,23 @@
     android:padding="10dp"
     android:layout_height="match_parent">
 
-    
+        <androidx.cardview.widget.CardView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            app:cardCornerRadius="64dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:src="@drawable/img_sah"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
     <TextView
         android:id="@+id/initial"
         android:layout_width="wrap_content"
@@ -28,6 +44,17 @@
         android:textColor="#000"
         android:textSize="16sp"
         android:drawableLeft="@drawable/icon_person"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Head"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/icon_designation_white"
         android:drawablePadding="5dp"
         />
 

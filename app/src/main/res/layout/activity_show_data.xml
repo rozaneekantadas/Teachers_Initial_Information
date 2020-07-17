@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
+    android:background="@color/blacklight"
     tools:context=".ShowData">
 
         <SearchView
             android:id="@+id/searchViewId"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:queryHint="Enter Initial"
             android:inputType="textCapCharacters"
-            android:background="@drawable/search_bg"
+            android:background="@drawable/search_bg2"
+            android:layout_centerHorizontal="true"
             >
         </SearchView>
 
@@ -22,10 +24,10 @@
             android:id="@+id/listViewId"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="@color/colorAccent"
+            android:divider="@color/greylight"
             android:dividerHeight="2dp"
             android:layout_below="@id/searchViewId"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             >
         </ListView>
 

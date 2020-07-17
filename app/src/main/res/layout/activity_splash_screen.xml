@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/grey"
     tools:context=".SplashScreen">
 
     <ImageView
@@ -21,7 +22,7 @@
         android:text="DIU Teachers Initial Information"
         android:textAlignment="center"
         android:fontFamily="serif-monospace"
-        android:textColor="#000"
+        android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
         />

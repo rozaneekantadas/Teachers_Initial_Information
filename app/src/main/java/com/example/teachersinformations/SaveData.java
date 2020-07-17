@@ -2,18 +2,36 @@ package com.example.teachersinformations;
 
 public class SaveData {
 
-    private String initial, name, department, contact, email, imageUrl;
+    private String initial, name, department, contact, email, designation, image;
 
     public SaveData(){
 
     }
 
-    public SaveData(String initial, String name, String department, String contact, String email) {
+    public SaveData(String initial, String name, String department, String contact, String email, String designation, String image) {
         this.initial = initial;
         this.name = name;
         this.department = department;
         this.contact = contact;
         this.email = email;
+        this.designation = designation;
+        this.image = image;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getInitial() {

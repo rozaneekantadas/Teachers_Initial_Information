@@ -9,9 +9,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,10 +40,11 @@ public class ShowData extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_data);
 
-        getSupportActionBar().setTitle("Teachers Information");
+        getSupportActionBar().setTitle("Teachers Initial Information");
         getSupportActionBar().setSubtitle("Daffodil International University");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("teacherInfo");
+        databaseReference.keepSynced(true);
 
         teacherList = new ArrayList<>();
 
@@ -66,6 +70,27 @@ public class ShowData extends AppCompatActivity {
                 return false;
             }
         });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                SaveData value = teacherList.get(i);
+                Intent intent = new Intent(ShowData.this, PopInfo.class);
+
+                Bundle extras = new Bundle();
+                extras.putString("name", value.getName());
+                extras.putString("designation", value.getDesignation());
+                extras.putString("department", value.getDepartment());
+                extras.putString("email", value.getEmail());
+                extras.putString("phone", value.getContact());
+                extras.putString("initial", value.getInitial());
+                extras.putString("imageUrl", value.getImage());
+                intent.putExtras(extras);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 
@@ -111,7 +136,6 @@ public class ShowData extends AppCompatActivity {
             Intent intent = new Intent(ShowData.this, PopUpAbout.class);
             startActivity(intent);
         }
-
         return super.onOptionsItemSelected(item);
     }
 }
