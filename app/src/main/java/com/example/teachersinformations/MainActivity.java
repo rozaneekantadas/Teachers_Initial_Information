@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             databaseReference.child(key).setValue(teacher);
 
-
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {

@@ -24,6 +24,8 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ShowData extends AppCompatActivity {
@@ -91,7 +93,6 @@ public class ShowData extends AppCompatActivity {
             }
         });
 
-
     }
 
     ValueEventListener valueEventListener = new ValueEventListener() {
@@ -105,6 +106,13 @@ public class ShowData extends AppCompatActivity {
                 SaveData teacher = snapshot1.getValue(SaveData.class);
                 teacherList.add(teacher);
             }
+
+            Collections.sort(teacherList, new Comparator<SaveData>() {
+                @Override
+                public int compare(SaveData saveData, SaveData t1) {
+                    return saveData.getInitial().compareTo(t1.getInitial());
+                }
+            });
 
             listView.setAdapter(customAdepter);
 
