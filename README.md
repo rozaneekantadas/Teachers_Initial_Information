@@ -27,3 +27,7 @@ This apps is for Daffodil Internation University. Here student can find the cour
 
 <img height='320' weight='240' src="homepage.png"/>  <img height='320' weight='240' src="searchresult.png"/>  <img height='320' weight='240' src="viewinfo.png"/>
 
+## Release Version:
+
+
+<img height='320' weight='240' src="ss1.png"/>  <img height='320' weight='240' src="ss2.png"/>  <img height='320' weight='240' src="ss3.png"/>
