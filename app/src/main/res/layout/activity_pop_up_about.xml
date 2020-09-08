@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/search_bg"
+    android:background="@drawable/sample_layout_bg"
     tools:context=".PopUpAbout">
 
     <TextView
@@ -16,6 +16,7 @@
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
         android:textSize="20sp"
+        android:textColor="@color/whitelight"
         />
 
     <TextView
@@ -25,7 +26,7 @@
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
         android:textSize="22sp"
-        android:textColor="#000"
+        android:textColor="@color/white"
         android:layout_marginTop="5dp"
         />
 
@@ -37,6 +38,7 @@
         android:fontFamily="serif-monospace"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -48,6 +50,7 @@
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
+        android:textColor="@color/whitelight"
         />
 
 </LinearLayout>
